@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Forest Frenzy</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<meta name="description" content="Forest Frenzy is a fun game that has cute little woodland critters chasing each other through the forest, trying to outsmart the other. Play Forest Frenzy today!">
+	</head>
+
+	<body>
+
+		<!-------- HEADER -------->
+		<header>
+			<!-- TITLE IMAGE -->
+			<div id="title">
+				<img src="images/title5.png" alt="Forest Frenzy title image">
+			</div>
+			<!-- TAGLINE -->
+			<div id="tagline">
+				<p>Send your opponent into an early hibernation!</p>
+			</div>
+			<!-- BUTTON - NEW GAME -->
+			<div class="button" id="newGameButton">
+				<img src="images/newGameButton.png" alt="New game button">
+			</div> 
+			<!-- BUTTON - RULES -->
+			<div class="button" id="rulesButton">
+				<img src="images/rulesButton.png" alt="Rules button">
+			</div> 
+		</header>
+
+		<!--------- MAIN BODY -------->
+		<main class="main">
+			<!--------- PLAYER 1 BOARD --------->
+			<section class="player-board" id="player-board-1">
+				<!-- CHIP NAME -->
+				<div class="name">
+					<img src="images/chip_name.png" alt="Chip's name image">
+				</div>
+				<!-- CHIP IMAGE AND HEALTH -->
+				<div class="player-detail" id="chipmunkProfile">
+					<img src="images/chipmunk_100.png" id="profilePic_chipmunk" alt="Chip at 100 health">
+					<p >Health</p>
+					<div class="input"  id="chipmunkHealthInput">100</div>
+				</div>
+				<!-- CHIP WEAPON IMAGE AND ATTACK -->
+				<div class="player-detail" id="chipmunkWeaponPanel">
+					<img src='images/mushroom.png' id='mushroom' class='weapon' data-damage='10' alt='Mushroom'>
+					<p>Attack</p>
+					<div class="input" id="chipmunkAttackInput">10</div>
+				</div>
+				<!-- CHIP SHIELD IMAGE AND STATUS -->
+				<div class="player-detail">
+					<img  class ="shield" src="images/shield.png" alt="Chip shield image">
+					<p>Shield</p>
+					<div class="input" id="chipmunkShieldInput">DOWN</div>
+				</div>			
+			</section>
+			<!--------- GRID -------->
+			<section class="grid-container">
+				<div class="grid-item" data-col="1" data-row="1"></div>
+				<div class="grid-item" data-col="2" data-row="1"></div>
+				<div class="grid-item" data-col="3" data-row="1"></div>
+				<div class="grid-item" data-col="4" data-row="1"></div>
+				<div class="grid-item" data-col="5" data-row="1"></div>
+				<div class="grid-item" data-col="6" data-row="1"></div>
+				<div class="grid-item" data-col="7" data-row="1"></div>
+				<div class="grid-item" data-col="8" data-row="1"></div>
+				<div class="grid-item" data-col="9" data-row="1"></div>
+				<div class="grid-item" data-col="1" data-row="2"></div>
+				<div class="grid-item" data-col="2" data-row="2"></div>
+				<div class="grid-item" data-col="3" data-row="2"></div>
+				<div class="grid-item" data-col="4" data-row="2"></div>
+				<div class="grid-item" data-col="5" data-row="2"></div>
+				<div class="grid-item" data-col="6" data-row="2"></div>
+				<div class="grid-item" data-col="7" data-row="2"></div>
+				<div class="grid-item" data-col="8" data-row="2"></div>
+				<div class="grid-item" data-col="9" data-row="2"></div>
+				<div class="grid-item" data-col="1" data-row="3"></div>
+				<div class="grid-item" data-col="2" data-row="3"></div>
+				<div class="grid-item" data-col="3" data-row="3"></div>
+				<div class="grid-item" data-col="4" data-row="3"></div>
+				<div class="grid-item" data-col="5" data-row="3"></div>
+				<div class="grid-item" data-col="6" data-row="3"></div>
+				<div class="grid-item" data-col="7" data-row="3"></div>
+				<div class="grid-item" data-col="8" data-row="3"></div>
+				<div class="grid-item" data-col="9" data-row="3"></div>
+				<div class="grid-item" data-col="1" data-row="4"></div>
+				<div class="grid-item" data-col="2" data-row="4"></div>
+				<div class="grid-item" data-col="3" data-row="4"></div>
+				<div class="grid-item" data-col="4" data-row="4"></div>
+				<div class="grid-item" data-col="5" data-row="4"></div>
+				<div class="grid-item" data-col="6" data-row="4"></div>
+				<div class="grid-item" data-col="7" data-row="4"></div>
+				<div class="grid-item" data-col="8" data-row="4"></div>
+				<div class="grid-item" data-col="9" data-row="4"></div>
+				<div class="grid-item" data-col="1" data-row="5"></div>
+				<div class="grid-item" data-col="2" data-row="5"></div>
+				<div class="grid-item" data-col="3" data-row="5"></div>
+				<div class="grid-item" data-col="4" data-row="5"></div>
+				<div class="grid-item" data-col="5" data-row="5"></div>
+				<div class="grid-item" data-col="6" data-row="5"></div>
+				<div class="grid-item" data-col="7" data-row="5"></div>
+				<div class="grid-item" data-col="8" data-row="5"></div>
+				<div class="grid-item" data-col="9" data-row="5"></div>
+				<div class="grid-item" data-col="1" data-row="6"></div>
+				<div class="grid-item" data-col="2" data-row="6"></div>
+				<div class="grid-item" data-col="3" data-row="6"></div>
+				<div class="grid-item" data-col="4" data-row="6"></div>
+				<div class="grid-item" data-col="5" data-row="6"></div>
+				<div class="grid-item" data-col="6" data-row="6"></div>
+				<div class="grid-item" data-col="7" data-row="6"></div>
+				<div class="grid-item" data-col="8" data-row="6"></div>
+				<div class="grid-item" data-col="9" data-row="6"></div>
+				<div class="grid-item" data-col="1" data-row="7"></div>
+				<div class="grid-item" data-col="2" data-row="7"></div>
+				<div class="grid-item" data-col="3" data-row="7"></div>
+				<div class="grid-item" data-col="4" data-row="7"></div>
+				<div class="grid-item" data-col="5" data-row="7"></div>
+				<div class="grid-item" data-col="6" data-row="7"></div>
+				<div class="grid-item" data-col="7" data-row="7"></div>
+				<div class="grid-item" data-col="8" data-row="7"></div>
+				<div class="grid-item" data-col="9" data-row="7"></div>
+				<div class="grid-item" data-col="1" data-row="8"></div>
+				<div class="grid-item" data-col="2" data-row="8"></div>
+				<div class="grid-item" data-col="3" data-row="8"></div>
+				<div class="grid-item" data-col="4" data-row="8"></div>
+				<div class="grid-item" data-col="5" data-row="8"></div>
+				<div class="grid-item" data-col="6" data-row="8"></div>
+				<div class="grid-item" data-col="7" data-row="8"></div>
+				<div class="grid-item" data-col="8" data-row="8"></div>
+				<div class="grid-item" data-col="9" data-row="8"></div>
+				<div class="grid-item" data-col="1" data-row="9"></div>
+				<div class="grid-item" data-col="2" data-row="9"></div>
+				<div class="grid-item" data-col="3" data-row="9"></div>
+				<div class="grid-item" data-col="4" data-row="9"></div>
+				<div class="grid-item" data-col="5" data-row="9"></div>
+				<div class="grid-item" data-col="6" data-row="9"></div>
+				<div class="grid-item" data-col="7" data-row="9"></div>
+				<div class="grid-item" data-col="8" data-row="9"></div>
+				<div class="grid-item" data-col="9" data-row="9"></div>
+			</section>
+			<!--------- PLAYER 2 BOARD --------->
+			<section class="player-board" id="player-board-2">
+				<!-- ROCKY NAME -->
+				<div class="name">
+					<img src="images/rocky_name.png" alt="Rocky's name image">
+				</div>
+				<!-- ROCKY IMAGE AND HEALTH -->
+				<div class="player-detail" id="raccoonProfile">
+					<img src="images/raccoon_100.png" id="profilePic_raccoon" alt="Rocky at 100 health">
+					<p>Health</p>
+					<div class="input"  id="raccoonHealthInput">100</div>
+				</div>
+				<!-- ROCKY WEAPON IMAGE AND ATTACK -->
+				<div class="player-detail" id="raccoonWeaponPanel">
+					<img src='images/mushroom.png' id='mushroom' class='weapon' data-damage='10' alt='Mushroom'>
+					<p>Attack</p>
+					<div class="input" id="raccoonAttackInput">10</div>
+				</div>
+				<!-- ROCKY SHIELD IMAGE AND STATUS -->
+				<div class="player-detail">
+					<img  class ="shield" src="images/shield.png" alt="Rocky shield image">
+					<p>Shield</p>
+					<div class="input" id="raccoonShieldInput">DOWN</div>
+				</div>	
+			</section>	
+		</main>
+
+		<!--------- FOOTER --------->
+		<footer>
+			<!-- RULES MODAL -->
+			<div id="rulesModal">
+				<div id="rulesStyle">
+					<p>
+						<span id="rulesTitle">RULES</span><br>
+						• Players can move up to 3 spaces per turn •<br>
+						• Landing directly on a weapon will pick it up and drop your old one • <br>
+						• If a player moves into a square touching another player a battle ensues • <br>
+						• The player on turn attacks first, then the defending player retaliates • <br>
+						• At end of turn a player can choose to raise their shield until their next turn • <br>
+						• A raised shield reduces attack damage by half, but does not allow retalliation • <br>
+						• The last critter standing wins •
+					</p>
+					<span id="rulesClose">CLOSE</span>
+				</div>	
+			</div>
+			<!-- GAME OVER MODAL -->
+			<div id="gameOverModal">
+				<div id="gameOverStyle">
+					<p>
+						<span id="gameOverTitle">Game Over!</span><br>
+						<span id="congrats">Congratulations</span><br>
+						<span id="winner"></span><br>
+						You've won the game!
+					</p>
+					<span id="gameOverClose">CLOSE</span>
+				</div>
+			</div>
+			<!-- SHIELD MODAL -->
+			<div id="shieldModal">
+				<div id="shieldStyle">
+					<p>
+						<span>Change shield position?</span>
+					</p>
+					<span id="shieldUp" class="shieldButton">UP</span>
+					<span id="shieldDown" class="shieldButton">DOWN</span>
+				</div>
+			</div>
+		</footer>
+
+		<!---------SCRIPT --------->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	  	<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
